@@ -22,6 +22,7 @@ const CoinPage = () => {
             console.log(id);
         }
     }
+    
     return (
         <>
         { loading && <CardCoin {...coin} /> }

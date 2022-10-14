@@ -4,9 +4,10 @@ import axios from 'axios';
 const router = express.Router();
 
 router.get('/markets', async (req,res) => {
+    const currentPage = req.query.currentPage;
 
     try{
-    const apiRes = await axios.get(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false`);
+    const apiRes = await axios.get(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=${currentPage}&sparkline=false`);
     const finalRes =  apiRes.data.map(function(v) {
             return {
                 id: v.id,
