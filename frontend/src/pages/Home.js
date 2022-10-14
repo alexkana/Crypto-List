@@ -44,7 +44,3 @@ const Home = () => {
 
 export default Home;
 
- /**<Pagination totalPosts={coins.length} 
-                    postsPerPage={postsPerPage}
-                    setCurrentPage={setCurrentPage}
-        />*/
