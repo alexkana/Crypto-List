@@ -1,6 +1,6 @@
 # Crypto-List
 
-Used CoinGecko API to retrieve cryptocoin information
+Used CoinGecko API to get data
 
 Front-end: React, Styled-Components
 
