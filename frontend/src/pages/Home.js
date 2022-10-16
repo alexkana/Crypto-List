@@ -32,11 +32,8 @@ const Home = () => {
 
     return (
         <>
-        { loading && 
-        coins.map(element => (<Card {...element} />)) }
-        <StyledButton onClick={loadMore}>Load More</StyledButton>
-
-
+        { loading && coins.map(element => (<Card {...element} />)) }
+        { loading && <StyledButton onClick={loadMore}>Load More</StyledButton>}
         </>
     )
 
